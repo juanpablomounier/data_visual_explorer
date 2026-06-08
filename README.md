@@ -1,17 +1,14 @@
 ## Welcome to DATASET_VISUAL_EXPLORER
 
-This application loads a CSV dataset, analyze the data and provides a quick overview including:
+This application loads a CSV dataset, analyzes the data and provides a quick overview including:
 
-- Concentration
-- Dispersion
-- Rare values
-- Biases
-
-
+- Detect numeric columns
+- Generate histograms
+- Generate visual reports
 
 ## Structure
 
-DATASET_TERMINAL/
+DATASET_VISUAL_EXPLORER/
 │
 ├── datasets/
 │   └── CSV files
@@ -44,12 +41,41 @@ python main.py
 
 ## An example of the output:
 
+**********************************
+WELCOME TO DATASET_VISUAL_EXPLORER
+**********************************
+
+CSV successfully loaded.
+
+The dataframe's shape is: 
+ Rows: 30
+ Columns: 7
+
+-------------------------
+
+Numeric columns are: 
+
+employee_id
+age
+salary_usd
+years_experience
+performance_score
+
+-------------------------
+
+Analyzing and creating figures...
 
 (Output truncated for brevity)
 
 ## Features
 
-
+- Load CSV datasets
+- Automatically detect numeric columns
+- Ignore identifier columns (e.g. employee_id)
+- Generate histograms for numeric variables
+- Generate a correlation matrix
+- Save visualizations as image files
+- Organize outputs automatically
 
 ## Author
 
